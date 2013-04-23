@@ -4,8 +4,17 @@ Installs some python packages. Is mainly a demonstration cookbook
 to be used as a template for setting up future cookbooks.
 
 Currently installs the following packages:
+- requests
+- lxml
+- beautifulsoup4
+- fom
+- lettuce
+- boto
+- nose
+- ipython-notebook
 - scipy
-- 
+- pandas
+- sympy
 
 Requirements
 ------------
