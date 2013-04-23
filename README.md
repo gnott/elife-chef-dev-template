@@ -1,61 +1,33 @@
 elife-chef-dev-template Cookbook
 ================================
-TODO: Enter the cookbook description here.
+Installs some python packages. Is mainly a demonstration cookbook
+to be used as a template for setting up future cookbooks.
 
-e.g.
-This cookbook makes your favorite breakfast sandwhich.
+Currently installs the following packages:
+- scipy
+- 
 
 Requirements
 ------------
-TODO: List your cookbook requirements. Be sure to include any requirements this cookbook has on platforms, libraries, other cookbooks, packages, operating systems, etc.
+- cookbook 'apt'
+- cookbook 'git'
+- cookbook 'python', '>= 1.2.2'
+- cookbook 'rvm',
+- cookbook 'build-essential',
 
-e.g.
-#### packages
-- `toaster` - elife-chef-dev-template needs toaster to brown your bagel.
-
-Attributes
-----------
-TODO: List you cookbook attributes here.
-
-e.g.
-#### elife-chef-dev-template::default
-<table>
-  <tr>
-    <th>Key</th>
-    <th>Type</th>
-    <th>Description</th>
-    <th>Default</th>
-  </tr>
-  <tr>
-    <td><tt>['elife-chef-dev-template']['bacon']</tt></td>
-    <td>Boolean</td>
-    <td>whether to include bacon</td>
-    <td><tt>true</tt></td>
-  </tr>
-</table>
 
 Usage
 -----
 #### elife-chef-dev-template::default
-TODO: Write usage instructions for each cookbook.
 
-e.g.
-Just include `elife-chef-dev-template` in your node's `run_list`:
+Just include 
+> cookbook 'elife-chef-dev-template',
+        :git=> 'http://github.com/elifesciences/elife-chef-dev-template.git'`elife-chef-dev-template`
 
-```json
-{
-  "name":"my_node",
-  "run_list": [
-    "recipe[elife-chef-dev-template]"
-  ]
-}
-```
+in your `Cheffile`
 
 Contributing
 ------------
-TODO: (optional) If this is a public cookbook, detail the process for contributing. If this is a private cookbook, remove this section.
-
-e.g.
 1. Fork the repository on Github
 2. Create a named feature branch (like `add_component_x`)
 3. Write you change
@@ -65,4 +37,5 @@ e.g.
 
 License and Authors
 -------------------
-Authors: TODO: List authors
+Authors: @ianmulvany 
+License: MIT
