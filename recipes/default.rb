@@ -12,6 +12,7 @@ package "nginx" do
   action :upgrade
 end
 
+# example using pip to install packages
 # pip should be installed by the default python cookbook
 pip_packages = "requests==0.13.0","lxml","beautifulsoup4","fom","lettuce","boto","nose"
 
@@ -21,6 +22,7 @@ pip_packages.each do |elife_pip_pack|
         end
 end
 
+# examples using apt-get install methods
 # check using base apt method for installing
 # ipython docs reccomend apt-get, so we follow their lead
 package "ipython-notebook" do
@@ -43,6 +45,10 @@ package "python-sympy" do
   action :install
 end
 
-#package "python-nose" do
-#  action :install
-#end
+# git examples
+# install this git repo to our local path
+git "~/" do
+  repository "git@github.com:elifesciences/elife-chef-dev-template.git"
+  reference "master"
+  action :sync
+end
