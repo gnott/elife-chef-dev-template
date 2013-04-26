@@ -47,8 +47,8 @@ end
 
 # git examples
 # install this git repo to our local path
-git "~/" do
-  repository "git@github.com:elifesciences/elife-chef-dev-template.git"
+git "/home/vagrant/localgit/" do
+  repository "git://github.com/elifesciences/elife-chef-dev-template.git"
   reference "master"
   action :sync
 end
