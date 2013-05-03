@@ -44,11 +44,3 @@ end
 package "python-sympy" do
   action :install
 end
-
-# git examples
-# install this git repo to our local path
-git "/home/vagrant/localgit/" do
-  repository "git://github.com/elifesciences/elife-chef-dev-template.git"
-  reference "master"
-  action :sync
-end
