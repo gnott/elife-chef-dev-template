@@ -12,6 +12,15 @@ package "nginx" do
   action :upgrade
 end
 
+# install prerequisites for pip lxml
+package "libxml2" do
+  action :install
+end
+
+package "libxslt1-dev" do
+  action :install
+end
+
 # example using pip to install packages
 # pip should be installed by the default python cookbook
 pip_packages = "requests==0.13.0","lxml","beautifulsoup4","fom","lettuce","boto","nose"
