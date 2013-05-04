@@ -11,7 +11,7 @@ include_recipe "git"
 include_recipe "elife-chef-dev-template::default"
 
 # where to put our repositories
-localgit = "/home/vagrant/localgit"
+localgit = "/home/localgit"
 
 directory localgit do
   owner "root"
